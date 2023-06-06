@@ -44,6 +44,7 @@ export default class App {
 
     // controls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    this.controls.maxPolarAngle = Math.PI / 2.5;
 
     // Moon
     this.moon = null;
